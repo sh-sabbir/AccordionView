@@ -69,7 +69,7 @@
 
 
 <!-- ABOUT THE PROJECT -->
-## About The Project [&#8593;](#table-of-contents)
+## About The Project[&#8593;](#table-of-contents)
 
 <!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
 
@@ -82,24 +82,24 @@ Here is why you should use:
 
 
 
-### Built With [&#8593;](#table-of-contents)
+### Built With[&#8593;](#table-of-contents)
 * [Android Studio](https://developer.android.com/studio)
 
 
 
 <!-- GETTING STARTED -->
-## Getting Started [&#8593;](#table-of-contents)
+## Getting Started[&#8593;](#table-of-contents)
 
 All you have to do is to add this library to your project and start using as per the [examples!](#usage)
 
-### Prerequisites [&#8593;](#table-of-contents)
+### Prerequisites[&#8593;](#table-of-contents)
 
 This is just a Library. You must have an existing project to use it.
 
 
-### Installation [&#8593;](#table-of-contents)
+### Installation[&#8593;](#table-of-contents)
 
-#### Gradle [&#8593;](#table-of-contents)
+#### Gradle[&#8593;](#table-of-contents)
 1. Add the JitPack repository to your build file
 ```sh
 allprojects {
@@ -117,7 +117,7 @@ dependencies {
 ```
 3. Sync Project
 
-#### Maven [&#8593;](#table-of-contents)
+#### Maven[&#8593;](#table-of-contents)
 1. Add the JitPack repository to your build file
 ```sh
 <repositories>
@@ -139,7 +139,7 @@ dependencies {
 
 
 <!-- USAGE EXAMPLES -->
-## Usage [&#8593;](#table-of-contents)
+## Usage[&#8593;](#table-of-contents)
 
 Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
@@ -269,7 +269,7 @@ accordionView.setOnExpandCollapseListener(new AccordionExpansionCollapseListener
 	 
 	 
 <!-- CONTRIBUTING -->
-## Contributing [&#8593;](#table-of-contents)
+## Contributing[&#8593;](#table-of-contents)
 
 Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
@@ -282,14 +282,14 @@ Contributions are what make the open source community such an amazing place to b
 
 
 <!-- LICENSE -->
-## License [&#8593;](#table-of-contents)
+## License[&#8593;](#table-of-contents)
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
 
 
 <!-- CONTACT -->
-## Contact [&#8593;](#table-of-contents)
+## Contact[&#8593;](#table-of-contents)
 
 Sabbir Hasan - sabbirshouvo@gmail.com
 
@@ -298,7 +298,7 @@ Project Link: [https://github.com/sh-sabbir/AccordionView](https://github.com/sh
 
 
 <!-- ACKNOWLEDGEMENTS -->
-## Acknowledgements [&#8593;](#table-of-contents)
+## Acknowledgements[&#8593;](#table-of-contents)
 * [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
 * [Img Shields](https://shields.io)
 * [Choose an Open Source License](https://choosealicense.com)
