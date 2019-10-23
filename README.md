@@ -17,6 +17,7 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
+[![](https://jitpack.io/v/sh-sabbir/AccordionView.svg)](https://jitpack.io/#sh-sabbir/AccordionView)
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
@@ -29,23 +30,23 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
+  <a href="https://github.com/sh-sabbir/AccordionView">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Best-README-Template</h3>
+  <h3 align="center">AccordionView</h3>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
+    An awesome AccordionLayout for your android projects!
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/sh-sabbir/AccordionView"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
+    <a href="https://github.com/sh-sabbir/AccordionView">View Demo</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
+    <a href="https://github.com/sh-sabbir/AccordionView/issues">Report Bug</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
+    <a href="https://github.com/sh-sabbir/AccordionView/issues">Request Feature</a>
   </p>
 </p>
 
@@ -60,7 +61,6 @@
   * [Prerequisites](#prerequisites)
   * [Installation](#installation)
 * [Usage](#usage)
-* [Roadmap](#roadmap)
 * [Contributing](#contributing)
 * [License](#license)
 * [Contact](#contact)
@@ -85,44 +85,58 @@ Of course, no one template will serve all projects since your needs may be diffe
 A list of commonly used resources that I find helpful are listed in the acknowledgements.
 
 ### Built With
-This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-* [Bootstrap](https://getbootstrap.com)
-* [JQuery](https://jquery.com)
-* [Laravel](https://laravel.com)
+* [Android Studio](https://developer.android.com/studio)
 
 
 
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+All you have to do is to add this library to your project and start using as per the [examples!](#usage)
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-```sh
-npm install npm@latest -g
-```
+This is just a Library. You must have an existing project to use it.
 
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+#### Gradle
+1. Add the JitPack repository to your build file
 ```sh
-git clone https:://github.com/your_username_/Project-Name.git
+	allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
 ```
-3. Install NPM packages
+2. Add the dependency
 ```sh
-npm install
+	dependencies {
+	        implementation 'com.github.sh-sabbir:AccordionView:0.1.0'
+	}
 ```
-4. Enter your API in `config.js`
-```JS
-const API_KEY = 'ENTER YOUR API';
+3. Sync Project
+
+#### Maven
+1. Add the JitPack repository to your build file
+```sh
+	<repositories>
+		<repository>
+		    <id>jitpack.io</id>
+		    <url>https://jitpack.io</url>
+		</repository>
+	</repositories>
 ```
-
-
+2. Add the dependency
+```sh
+	<dependency>
+	    <groupId>com.github.sh-sabbir</groupId>
+	    <artifactId>AccordionView</artifactId>
+	    <version>0.1.0</version>
+	</dependency>
+```
+3. Sync Project
 
 <!-- USAGE EXAMPLES -->
 ## Usage
@@ -130,14 +144,6 @@ const API_KEY = 'ENTER YOUR API';
 Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
 _For more examples, please refer to the [Documentation](https://example.com)_
-
-
-
-<!-- ROADMAP -->
-## Roadmap
-
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a list of proposed features (and known issues).
-
 
 
 <!-- CONTRIBUTING -->
@@ -163,9 +169,9 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+Sabbir Hasan - sabbirshouvo@gmail.com
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Project Link: [https://github.com/sh-sabbir/AccordionView](https://github.com/sh-sabbir/AccordionView)
 
 
 
@@ -174,31 +180,21 @@ Project Link: [https://github.com/your_username/repo_name](https://github.com/yo
 * [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
 * [Img Shields](https://shields.io)
 * [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Pages](https://pages.github.com)
-* [Animate.css](https://daneden.github.io/animate.css)
-* [Loaders.css](https://connoratherton.com/loaders)
-* [Slick Carousel](https://kenwheeler.github.io/slick)
-* [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll)
-* [Sticky Kit](http://leafo.net/sticky-kit)
-* [JVectorMap](http://jvectormap.com)
-* [Font Awesome](https://fontawesome.com)
-
-
 
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=flat-square
-[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=flat-square
-[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=flat-square
-[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=flat-square
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=flat-square
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/othneildrew
+[contributors-shield]: https://img.shields.io/github/contributors/sh-sabbir/AccordionView.svg?style=flat
+[contributors-url]: https://github.com/sh-sabbir/AccordionView/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/sh-sabbir/AccordionView.svg?style=flat
+[forks-url]: https://github.com/sh-sabbir/AccordionView/network/members
+[stars-shield]: https://img.shields.io/github/stars/sh-sabbir/AccordionView.svg?style=flat
+[stars-url]: https://github.com/sh-sabbir/AccordionView/stargazers
+[issues-shield]: https://img.shields.io/github/issues/sh-sabbir/AccordionView.svg?style=flat
+[issues-url]: https://github.com/sh-sabbir/AccordionView/issues
+[license-shield]: https://img.shields.io/github/license/sh-sabbir/AccordionView.svg?style=flat
+[license-url]: https://github.com/sh-sabbir/AccordionView/blob/master/LICENSE.txt
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat&logo=linkedin&colorB=555
+[linkedin-url]: https://linkedin.com/in/sabbirshouvo
 [product-screenshot]: images/screenshot.png
