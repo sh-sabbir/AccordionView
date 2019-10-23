@@ -1,0 +1,2 @@
+include ':app', ':accordionview'
+rootProject.name='AccordionViewContainer'
