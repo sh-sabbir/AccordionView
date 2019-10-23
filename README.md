@@ -71,7 +71,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project[&#8593;](#table-of-contents)
 
-<!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
+<img src="images/Screenshot_accordionView.png" alt="Accordion View Screen Shot" width="320" height="auto">
 
 I was personally looking for a good AccordionView for one of my projects. Surprisingly there is no default one also no perfect thirdpary library! So decided to create one for myself and share with the universe to distribute joy :wink:
 
@@ -319,4 +319,4 @@ Project Link: [https://github.com/sh-sabbir/AccordionView](https://github.com/sh
 [license-url]: https://github.com/sh-sabbir/AccordionView/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/sabbirshouvo
-[product-screenshot]: images/screenshot.png
+[product-screenshot]: images/Screenshot_accordionView.png
