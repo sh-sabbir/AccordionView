@@ -31,7 +31,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/sh-sabbir/AccordionView">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="images/accordion-menu.svg" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">AccordionView</h3>
@@ -71,18 +71,16 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+<!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
 
-There are many great README templates available on GitHub, however, I didn't find one that really suit my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need.
+I was personally looking for a good AccordionView for one of my projects. Surprisingly there is no default one also no perfect thirdpary library! So decided to create one for myself and share with the universe to distribute joy :wink:
 
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should element DRY principles to the rest of your life :smile:
+Here is why you should use:
+* You have many critical things to do than creating a custom view.
+* You need freedom
+* You are just a lazy like me :roll_eyes:
 
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue.
 
-A list of commonly used resources that I find helpful are listed in the acknowledgements.
 
 ### Built With
 * [Android Studio](https://developer.android.com/studio)
@@ -98,54 +96,178 @@ All you have to do is to add this library to your project and start using as per
 
 This is just a Library. You must have an existing project to use it.
 
+
 ### Installation
 
 #### Gradle
 1. Add the JitPack repository to your build file
 ```sh
-	allprojects {
-		repositories {
-			...
-			maven { url 'https://jitpack.io' }
-		}
+allprojects {
+	repositories {
+		...
+		maven { url 'https://jitpack.io' }
 	}
+}
 ```
 2. Add the dependency
 ```sh
-	dependencies {
-	        implementation 'com.github.sh-sabbir:AccordionView:0.1.0'
-	}
+dependencies {
+	implementation 'com.github.sh-sabbir:AccordionView:0.1.0'
+}
 ```
 3. Sync Project
 
 #### Maven
 1. Add the JitPack repository to your build file
 ```sh
-	<repositories>
-		<repository>
-		    <id>jitpack.io</id>
-		    <url>https://jitpack.io</url>
-		</repository>
-	</repositories>
+<repositories>
+    <repository>
+	<id>jitpack.io</id>
+        <url>https://jitpack.io</url>
+    </repository>
+</repositories>
 ```
 2. Add the dependency
 ```sh
-	<dependency>
-	    <groupId>com.github.sh-sabbir</groupId>
-	    <artifactId>AccordionView</artifactId>
-	    <version>0.1.0</version>
-	</dependency>
+<dependency>
+    <groupId>com.github.sh-sabbir</groupId>
+    <artifactId>AccordionView</artifactId>
+    <version>0.1.0</version>
+</dependency>
 ```
 3. Sync Project
+
 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
 Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+The accordion component can also be generated from the java class 
+```sh
+AccordionView accordionView = new AccordionView(this);
+```
 
+The best way to use this component is from the layout xml file. The following example with llustrate the use:
 
+```sh
+<dev.iamsabbir.accordionview.AccordionView
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:layout_alignParentStart="true"
+	android:visibility="visible"
+	app:isAnimated="false"
+	app:heading="This is a demo accordion"
+	app:isExpanded="true"
+	app:isPartitioned="true">
+
+	<TextView
+	    android:id="@+id/textView"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="Lorem Ipsom is the best way to add text." />
+
+	<Button
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="Button"
+	    android:id="@+id/button_2"
+	    android:layout_below="@+id/textView" />
+	<Button
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="Another Button"
+	    android:layout_below="@+id/button_2" />
+
+</dev.iamsabbir.accordionview.AccordionView>
+```
+
+The accordion component has two parts. 
+1. Heading: the top part of the accordion, 'This is a demo accordion' in the above example. 
+2. The body, that I call 'paragraph'. This body is a RelativeLayout and would contain what ever UI elements you add to the accordion. 
+
+You would see that there are several new attributes I have defined for the accordion. 
+#### 1. Heading 
+```
+app:heading="This is a demo accordion"
+```
+ or
+```
+accordionView.setHeadingString("Oh my heading");
+```
+This defines the string to be used as heading. 
+  
+#### 2. Partition (boolean): the 'line' between the heading and the paragraph. 
+```
+app:isPartitioned="true"
+```
+ or
+```
+accordionView.setPartitioned(true);
+```
+This  value determines if the line is drawn between the heading and the paragraph. 
+  
+#### 3. Expanded (boolean): this value determines if the paragraph is expanded by default. 
+```app:isExpanded="true"```
+ or
+```
+accordionView.setExpanded(true);
+```
+  
+#### 4. Animated (boolean): this value determines if the accordion expands or collapses with an animation
+```
+app:isAnimated="true"
+```
+ or
+```
+accordionView.setAnimated(true);
+```
+The accordion view above is an AccordionView object that can be created as (in an Activity):
+```
+AccordionView wordView = new AccordionView(this);
+```
+  
+#### 5. Heading Background: this value determines the color/drawable to be used for the background
+      
+```
+app:headingBackground = "@drawable/example_layout_drawable" (to use a drawable)
+app:headingBackgroundColor = "@android:color/white" (to set just the color)
+```
+ or
+```        
+accordionView.setHeadingBackground(R.drawable.custom_background);    (to use a drawable)
+accordionView.setHeadingBackgroundColor(Color.WHITE);    (to set just the color)
+```
+        
+#### 6. Body/Paragraph Background: this value determines the color/drawable to be used for the body of the accordion
+```
+app:bodyBackground="@drawable/custom_drawable" (to set the drawable)
+app:bodyBackgroundColor="#233245" (to set the color)
+```
+ or
+```
+accordionView.setBodyBackground(R.drawable.custom_drawable);    (to set just the color)
+accordionView.setBodyBackgroundColor(Color.CYAN);    (to set just the color)
+```
+
+To add different elements into the body (paragraph) of the accordion component, you can simply define them within the AccordionView tag. 
+
+You can also add a listener to be triggered when the accordion is expanded or collapsed
+```
+accordionView.setOnExpandCollapseListener(new AccordionExpansionCollapseListener() {
+	    @Override
+	    public void onExpanded(AccordionView view) {
+		//your code here
+	    }
+
+	    @Override
+	    public void onCollapsed(AccordionView view) {
+	       //you code here
+	    }
+ });
+``` 
+	 
+	 
 <!-- CONTRIBUTING -->
 ## Contributing
 
